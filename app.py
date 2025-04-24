@@ -20,7 +20,7 @@ with st.form("user_form"):
     age = st.number_input("Age", min_value=1, max_value=120, step=1)
     gender = st.radio("Gender", ["Male", "Female", "Other"])
     weight = st.number_input("Weight (kg)", min_value=1.0, max_value=300.0, step=0.1)
-    uploaded_file = st.file_uploader("Upload Fingerprint Image", type=["jpg", "jpeg", "png","bmp"])
+    uploaded_file = st.file_uploader("Upload Fingerprint Image", type=["jpg", "jpeg","bmp"])
     
     submitted = st.form_submit_button("Predict Blood Group")
 
